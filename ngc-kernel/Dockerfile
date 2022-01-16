@@ -8,8 +8,8 @@ RUN pip install ipykernel && \
     pip install --upgrade --quiet --no-cache-dir \
     boto3 sagemaker matplotlib 
 
-# Copies the training code inside the container
-COPY train.py /opt/ml/code/train.py
+# # Copies the training code inside the container
+# COPY train.py /opt/ml/code/train.py
 
-# Defines train.py as script entrypoint
-ENV SAGEMAKER_PROGRAM python train.py
+# # Defines train.py as script entrypoint
+# ENV SAGEMAKER_PROGRAM python train.py
